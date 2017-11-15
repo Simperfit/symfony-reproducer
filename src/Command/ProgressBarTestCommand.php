@@ -32,18 +32,13 @@ class ProgressBarTestCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        echo "1\n2\n3\n4\n5\n";
+        echo "1\n2\n3\n";
         sleep(1);
 
         $progressBar = new ProgressBar($output, 100);
         $progressBar->setFormat("hello\nworld\n");
         $progressBar->display();
-        sleep(1);
-
-        $progressBar->setFirstRunAndClear();
-        sleep(1);
-
+        $progressBar->clear();
         $progressBar->display();
-        sleep(1);
     }
 }
