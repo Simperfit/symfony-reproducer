@@ -36,7 +36,7 @@ class ProgressBarTestCommand extends Command
         sleep(1);
 
         $progressBar = new ProgressBar($output, 100);
-        $progressBar->setFormat("hello\nworld\n");
+        $progressBar->setFormat("helloworld");
         $progressBar->display();
         $progressBar->clear();
         $progressBar->display();

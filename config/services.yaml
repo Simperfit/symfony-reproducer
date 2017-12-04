@@ -20,10 +20,16 @@ services:
         resource: '../src/*'
         # you can exclude directories or files
         # but if a service is unused, it's removed anyway
-        exclude: '../src/{Entity,Migrations,Repository,Tests}'
+        exclude: '../src/{Entity,Migrations,Repository,Tests,Gerard}'
 
     # controllers are imported separately to make sure they
     # have the tag that allows actions to type-hint services
     App\Controller\:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
+
+# controllers are imported separately to make sure they
+    # have the tag that allows actions to type-hint services
+    App\Gerard\GerardClass\:
+        class: 'App\Gerard\GerardClass'
+        public: true

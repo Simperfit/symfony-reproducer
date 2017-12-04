@@ -16,7 +16,9 @@ class TestController extends Controller
      */
     public function index(Request $request)
     {
-        // replace this line with your own code!
+
+        return new Response('toto');
+       /* // replace this line with your own code!
 // just setup a fresh $task object (remove the dummy data)
         $task = new Gerard();
 
@@ -42,5 +44,6 @@ class TestController extends Controller
 
         return $this->render('base.html.twig', array(
             'form' => $form->createView(),
-        ));    }
+        ));   */
+    }
 }
