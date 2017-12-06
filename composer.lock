@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddae602b60692d789d4006d816fc2d6a",
+    "content-hash": "d7ebc4602caa09ddf0fa97efc5990d92",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1883,6 +1883,56 @@
             "time": "2017-11-09T17:30:28+00:00"
         },
         {
+            "name": "symfony/expression-language",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/expression-language.git",
+                "reference": "915ed14f8773234bdf283abfa9819c8b1cf35811"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/915ed14f8773234bdf283abfa9819c8b1cf35811",
+                "reference": "915ed14f8773234bdf283abfa9819c8b1cf35811",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/cache": "~3.4|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\ExpressionLanguage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony ExpressionLanguage Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-11-21T17:31:29+00:00"
+        },
+        {
             "name": "symfony/filesystem",
             "version": "dev-master",
             "source": {
@@ -3609,6 +3659,7 @@
         "symfony/config": 20,
         "symfony/console": 20,
         "symfony/debug": 20,
+        "symfony/expression-language": 20,
         "symfony/form": 20,
         "symfony/framework-bundle": 20,
         "symfony/maker-bundle": 20,

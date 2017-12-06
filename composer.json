@@ -9,6 +9,7 @@
         "symfony/config": "^3.4-dev",
         "symfony/console": "^3.4-dev",
         "symfony/debug": "^3.4-dev",
+        "symfony/expression-language": "^4.1@dev",
         "symfony/form": "^4.1@dev",
         "symfony/framework-bundle": "^3.4-dev",
         "symfony/maker-bundle": "dev-master",

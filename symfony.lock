@@ -142,5 +142,8 @@
             "version": "4.0",
             "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
         }
+    },
+    "symfony/expression-language": {
+        "version": "4.1-dev"
     }
 }

@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\Process;
 
-class ProcessTest extends Command
+class TestToto extends Command
 {
     public function __construct()
     {
@@ -21,8 +21,7 @@ class ProcessTest extends Command
     public function configure(): void
     {
         $this
-            ->setName('test-titi')
-            ->setAliases(['test'])
+            ->setName('test-toto')
             ->setDescription('testProcess');
     }
 
@@ -31,17 +30,6 @@ class ProcessTest extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
-        //This returns an output
-        var_dump(shell_exec('ls'));
-
-        $process = new Process('ls');
-        $process->mustRun();
-        //These return empty strings
-        var_dump(
-            $process->getOutput(),
-            $process->getErrorOutput()
-        );
-
+        var_dump('hello');
     }
 }
