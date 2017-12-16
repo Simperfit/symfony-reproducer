@@ -37,6 +37,14 @@ class DebugTestCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $helper = $this->getHelper('question');
+        $question = new ChoiceQuestion(
+            'Please select your favorite color (defaults to red)',
+            array('red', 'blue', 'yellow'),
+            0
+        );
+        $color = $helper->ask($input, $output, $question);
+        var_dump($color);
         $sf = new SymfonyStyle($input, $output);
         var_dump($sf->choice( 'Please select your favorite colors (defaults to red and blue)',
             array('red', 'blue', 'yellow'),
