@@ -2036,12 +2036,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/form.git",
-                "reference": "ed2dacb35236342c1e5fa9d02b061db04f84b533"
+                "reference": "ca2b083ca730a237cd9ee45966b748a4a71f12a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/form/zipball/ed2dacb35236342c1e5fa9d02b061db04f84b533",
-                "reference": "ed2dacb35236342c1e5fa9d02b061db04f84b533",
+                "url": "https://api.github.com/repos/symfony/form/zipball/ca2b083ca730a237cd9ee45966b748a4a71f12a4",
+                "reference": "ca2b083ca730a237cd9ee45966b748a4a71f12a4",
                 "shasum": ""
             },
             "require": {
@@ -2070,7 +2070,7 @@
                 "symfony/security-csrf": "~3.4|~4.0",
                 "symfony/translation": "~3.4|~4.0",
                 "symfony/validator": "~3.4|~4.0",
-                "symfony/var-dumper": "~3.4-beta3|~4.0-beta3"
+                "symfony/var-dumper": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/framework-bundle": "For templating with PHP.",
@@ -2108,7 +2108,7 @@
             ],
             "description": "Symfony Form Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-21T17:31:29+00:00"
+            "time": "2017-12-04T12:32:14+00:00"
         },
         {
             "name": "symfony/framework-bundle",

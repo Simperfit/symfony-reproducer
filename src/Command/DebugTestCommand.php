@@ -9,6 +9,8 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Question\ChoiceQuestion;
+use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\Debug\Exception\FatalErrorException;
 use Symfony\Component\DependencyInjection\ExpressionLanguage;
@@ -35,14 +37,9 @@ class DebugTestCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        // throws a Symfony\Component\Debug\Exception\FatalThrowableError
-        /*Debug::enable();
-        $a = new \stdClass();
-        $a->foo = 'bar';
-        var_export($a['foo']);
-
-    */
-        $language = new \Symfony\Component\ExpressionLanguage\ExpressionLanguage();
-        $parsedExpression = $language->parse('node.', ['node']);
+        $sf = new SymfonyStyle($input, $output);
+        var_dump($sf->choice( 'Please select your favorite colors (defaults to red and blue)',
+            array('red', 'blue', 'yellow'),
+            'red'));
     }
 }
