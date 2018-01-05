@@ -33,3 +33,6 @@ services:
     App\Gerard\GerardClass\:
         class: 'App\Gerard\GerardClass'
         public: true
+    App\Api\AllowEmptyItemIriConverter:
+        decorates: 'api_platform.iri_converter'
+        arguments: ['@App\Api\AllowEmptyItemIriConverter.inner']
