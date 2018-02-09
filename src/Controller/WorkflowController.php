@@ -43,7 +43,7 @@ class WorkflowController extends Controller
         $gerard->status = 'draft';
         $marking->getMarking($gerard);
         $workflow = new Workflow($definition, $marking);
-        $this->workflowRegistry->addWorkflow($workflow, new InstanceOfSupportStrategy(Gerard::class));
+        $this->workflowRegistry->add($workflow, Gerard::class);
 
         return $this->render('base.html.twig', array(
             'object' => $gerard,
