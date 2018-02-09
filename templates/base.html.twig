@@ -5,6 +5,14 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
+    {% if workflow_can(object, 'review') %}
+        <a href="#">Reject article</a>
+    {% endif %}
+    {% for transition in workflow_transitions(object) %}
+        <p>{{ transition.name }}</p>
+    {% else %}
+        No actions available.
+    {% endfor %}
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}

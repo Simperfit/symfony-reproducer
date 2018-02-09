@@ -2,6 +2,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: 'en'
+    container.build_hash: 'build'
 
 services:
     # default configuration for services in *this* file
@@ -33,6 +34,3 @@ services:
     App\Gerard\GerardClass\:
         class: 'App\Gerard\GerardClass'
         public: true
-    App\Api\AllowEmptyItemIriConverter:
-        decorates: 'api_platform.iri_converter'
-        arguments: ['@App\Api\AllowEmptyItemIriConverter.inner']

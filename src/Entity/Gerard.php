@@ -17,4 +17,8 @@ class Gerard
     private $id;
 
     public $bool;
+    /**
+     * @ORM\Column(type="string")
+     */
+    public $status;
 }
