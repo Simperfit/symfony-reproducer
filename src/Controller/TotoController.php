@@ -27,15 +27,15 @@ class TotoController extends Controller
     }
 
     /**
-     * @Route("/notWorking", name="index")
+     * @Route("/php", name="php")
      */
-    public function index(Request $request)
+    public function testRenderPhp(Request $request)
     {
         return $this->render("hello.html.php");
     }
 
     /**
-     * @Route("/working", name="index")
+     * @Route("/twig", name="twig")
      */
     public function testRenderTwig(Request $request)
     {
